@@ -76,7 +76,7 @@ async function runMega645() {
 
 }
 
-cron.schedule('0 19 * * *', () => {
+cron.schedule('* * * * *', () => {
   console.log('Running every day at 19 PM');
 
   //runPower655();
