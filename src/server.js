@@ -12,7 +12,7 @@ function delay(ms) {
 }
 async function runPower655() {
   try {
-    
+    console.log("sẽ run runMega645");
      for(var page=0; page < 3; page++)
       {
         const resultsArray = [];
@@ -45,7 +45,7 @@ async function runPower655() {
   
 async function runMega645() {
   try {
-    
+      console.log("sẽ run runMega645");
      for(var page=0; page < 3; page++)
       {
         const resultsArray = [];
@@ -79,8 +79,8 @@ async function runMega645() {
 cron.schedule('*/5 * * * *', () => {
   console.log('Running every day at 19 PM');
 
-  runPower655();
-  runMega645();
+  //runPower655();
+  //runMega645();
   
 
   // You can call DB queries, API requests, cleanup tasks here
