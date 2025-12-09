@@ -79,12 +79,15 @@ async function runMega645() {
 cron.schedule('0 19 * * *', () => {
   console.log('Running every day at 19 PM');
 
-  runPower655();
-  runMega645();
+  //runPower655();
+  //runMega645();
   
 
   // You can call DB queries, API requests, cleanup tasks here
 });
+
+runPower655();
+  runMega645();
 
 
 

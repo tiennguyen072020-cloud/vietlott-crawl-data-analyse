@@ -36,7 +36,6 @@ async function insertVietlottPower655Result(date, period, numbers, extraNumber) 
      const values = [date, period, numbers, extraNumber];
      const result = await pool.query(query, values);
      return result.rows[0]; // trả về bản ghi vừa insert
-    return null;
   } catch (err) {
     console.error('Error inserting Vietlott result:', err);
     throw err;
